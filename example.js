@@ -12,3 +12,11 @@ document.body.style.backgroundColor = '#FF69B4';
 for (let child of document.body.children) {
     console.log(child);
 }
+
+// Select all elements with the 'important' class
+let importantElements = document.querySelectorAll('.important');
+
+// Iterate over the selected elements and add the 'title' attribute
+for (let element of importantElements) {
+    element.setAttribute('class', 'important');
+}
