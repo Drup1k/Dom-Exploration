@@ -11,6 +11,18 @@
     }
 //   });
 
+// Select the <h2> element
+var list = document.querySelector('h2');
+  
+// Select the last <li> element which is the last child of the <ol>
+var lastItem = list.lastElementChild;
+
+// Move the last <li> to be the first child of the <ol>
+if (lastItem) {
+  list.insertBefore(lastItem, list.firstElementChild);
+}
+  
+
 
     // Select the sections
     var sections = document.querySelectorAll('main > section');
@@ -33,5 +45,3 @@
       secondSection.replaceChild(clonedThirdSectionHeading, secondSectionHeading);
       thirdSection.replaceChild(clonedSecondSectionHeading, thirdSectionHeading);
     }
-  
-  
